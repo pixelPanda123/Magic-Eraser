@@ -1,0 +1,16 @@
+# Virtual Environment
+venv/
+__pycache__/
+*.pyc
+
+# Model Weights (Crucial!)
+models/
+*.pth
+*.ckpt
+
+# Temporary/Test Data
+test_image.png
+test_mask.png
+test_result.png
+debug_mask.png
+.DS_Store
