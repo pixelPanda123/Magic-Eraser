@@ -69,10 +69,7 @@ def process_and_log(input_img, history):
 
 # --- THEME & STYLING ---
 
-# Defining the Dual-Cream Palette
-# Page Background (Darker): #F3E5AB (Vanilla)
-# Container Background (Lighter): #FFFDD0 (Cream)
-
+# Clean White Minimal Theme
 cream_theme = gr.themes.Default(
     primary_hue="indigo",
     secondary_hue="slate",
@@ -80,66 +77,69 @@ cream_theme = gr.themes.Default(
     font=[gr.themes.GoogleFont("Plus Jakarta Sans"), "ui-sans-serif", "sans-serif"],
 ).set(
     # Page-wide background
-    body_background_fill="#F3E5AB", 
+    body_background_fill="#FFFFFF", 
     
     # Component-level background
-    block_background_fill="#FFFDD0",
-    block_border_width="3px",
-    block_border_color="#000000", 
+    block_background_fill="#FFFFFF",
+    block_border_width="1px",
+    block_border_color="#E5E7EB",  # light grey
     
-    # High-Contrast Black Text
-    body_text_color="#000000",
-    block_title_text_color="#000000",
-    block_label_text_color="#000000",
-    block_title_text_weight="900",
+    # Text
+    body_text_color="#0F172A",        # near-black
+    block_title_text_color="#0F172A",
+    block_label_text_color="#334155", # slate grey
+    block_title_text_weight="700",
     
-    # Navigation & Interaction
-    button_primary_background_fill="#000000",
-    button_primary_text_color="#FFFDD0",
+    # Buttons
+    button_primary_background_fill="#1E293B",  # dark slate
+    button_primary_text_color="#FFFFFF",
     button_secondary_background_fill="transparent",
-    button_secondary_border_color="#000000",
-    button_secondary_text_color="#000000"
+    button_secondary_border_color="#CBD5E1",
+    button_secondary_text_color="#1E293B"
 )
 
-# Custom CSS for the full-page cream coverage and typography pop
+# Clean white layout + modern spacing
 custom_css = """
 body, .gradio-container { 
-    background-color: #F3E5AB !important; 
+    background-color: #F8FAFC !important;  /* soft off-white */
 }
 
 .container { 
-    max-width: 850px; 
-    margin: 40px auto; 
-    padding: 40px; 
-    background-color: #FFFDD0; 
-    border: 4px solid #000000;
+    max-width: 900px; 
+    margin: 48px auto; 
+    padding: 48px; 
+    background-color: #FFFFFF; 
+    border-radius: 14px;
+    border: 1px solid #E5E7EB;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
 }
 
 h1 { 
-    font-size: 3.5rem; 
-    font-weight: 900; 
-    color: #000000; 
-    letter-spacing: -0.05em; 
-    margin-bottom: 0.1rem; 
+    font-size: 3rem; 
+    font-weight: 800; 
+    color: #020617; 
+    letter-spacing: -0.03em; 
+    margin-bottom: 0.3rem; 
 }
 
 .description { 
-    font-size: 1.1rem; 
-    color: #000000; 
+    font-size: 1rem; 
+    color: #475569; 
     margin-bottom: 2rem; 
-    font-weight: 800; 
-    text-transform: uppercase; 
-    border-bottom: 2px solid #000000; 
+    font-weight: 600; 
+    text-transform: none; 
+    border-bottom: 2px solid #E5E7EB; 
     display: inline-block; 
+    padding-bottom: 0.4rem;
 }
 
 .history-title { 
     margin-top: 4rem; 
-    font-weight: 900; 
-    font-size: 2rem; 
-    color: #000000; 
-    border-top: 4px solid #000000; 
-    padding-top: 1rem; 
+    font-weight: 700; 
+    font-size: 1.8rem; 
+    color: #020617; 
+    border-top: 1px solid #E5E7EB; 
+    padding-top: 1.2rem; 
 }
 """
 
