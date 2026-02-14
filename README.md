@@ -82,4 +82,4 @@ python3 web_app.py
 ```
 an example
 
-![alt text](image.png)
+![alt text](assets/Screenshot 2026-02-14 at 12.44.31 PM.png)
