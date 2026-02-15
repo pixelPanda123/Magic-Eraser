@@ -1,4 +1,4 @@
-#The Magic Eraser
+# The Magic Eraser
 
 "David Copperfield is a famous fictional character and also a magician, who is particularly known for his disappearing acts. That's what I intended with this project: to disappear objects that are not desired by the user."
 
