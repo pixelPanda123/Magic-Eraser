@@ -1,6 +1,6 @@
 # The Magic Eraser
 
-"David Copperfield is a famous fictional character and also a magician, who is particularly known for his disappearing acts. That's what I intended with this project: to disappear objects that are not desired by the user."
+David Copperfield is a famous fictional character and a real magician, known particularly for his disappearing acts. That's what I intended with this project: to disappear objects that are not desired by the user.
 
 This project is a high-performance image inpainting pipeline designed to seamlessly remove objects from any scene. It utilizes state-of-the-art deep learning architectures to ensure that the "disappearance" is not just a blur, but a mathematically consistent reconstruction of the background.
 
